@@ -29,7 +29,7 @@ public class OrmLearnApplication {
     private static void getCountryTest() {
         LOGGER.info("Start");
         try {
-            Country country = countryService.findCountryByCode("IN");
+            Country country = countryService.findCountryByCode("ZZ");
             LOGGER.debug("Country: {}", country);
         } catch (CountryNotFoundException e) {
             LOGGER.error("Exception: {}", e.getMessage());
